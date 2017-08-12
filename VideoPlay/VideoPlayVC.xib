@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoPlayVC" customModule="TestDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="IBPlayBtnView" destination="PFV-ZY-K2d" id="sQH-eE-IuD"/>
+                <outlet property="IBPlayView" destination="AxB-6i-zLN" id="qMp-je-fKf"/>
+                <outlet property="IBbtnPlay" destination="TOV-gZ-9PA" id="M5R-3d-Z7Z"/>
+                <outlet property="IBplayBourd" destination="AxB-6i-zLN" id="LaA-S7-e7X"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JM-vw-0s6">
+                    <rect key="frame" x="16" y="50" width="343" height="30"/>
+                    <color key="backgroundColor" red="0.41176470590000003" green="0.67843137249999996" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3sd-J8-hw3"/>
+                    </constraints>
+                    <state key="normal" title="AVPlayerViewController">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickOnAVPlayerController:" destination="-1" eventType="touchUpInside" id="n0E-Yw-LQY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQ4-FT-tg9">
+                    <rect key="frame" x="16" y="98" width="343" height="30"/>
+                    <color key="backgroundColor" red="0.41176470590000003" green="0.67843137249999996" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="zhG-r6-I8t"/>
+                    </constraints>
+                    <state key="normal" title="AVPlayer">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickOnAVPlayer:" destination="-1" eventType="touchUpInside" id="nFQ-Pa-t4o"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AxB-6i-zLN">
+                    <rect key="frame" x="16" y="179" width="343" height="220"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="1v4-U2-cA0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFV-ZY-K2d">
+                    <rect key="frame" x="16" y="399" width="343" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOV-gZ-9PA">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Pause"/>
+                            <connections>
+                                <action selector="clickOnPauseStop:" destination="-1" eventType="touchUpInside" id="2NU-eb-x0Q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="s7v-hQ-2tZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AxB-6i-zLN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="2q1-Jv-qId"/>
+                <constraint firstItem="5JM-vw-0s6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="8YC-E0-YcC"/>
+                <constraint firstItem="AxB-6i-zLN" firstAttribute="top" secondItem="CQ4-FT-tg9" secondAttribute="bottom" constant="51" id="P21-4f-MxG"/>
+                <constraint firstItem="CQ4-FT-tg9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T2v-pT-c9T"/>
+                <constraint firstItem="5JM-vw-0s6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UZp-68-TDI"/>
+                <constraint firstItem="CQ4-FT-tg9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="WI7-0Z-sp1"/>
+                <constraint firstAttribute="trailing" secondItem="PFV-ZY-K2d" secondAttribute="trailing" constant="16" id="YJX-ZR-Z5E"/>
+                <constraint firstItem="CQ4-FT-tg9" firstAttribute="top" secondItem="5JM-vw-0s6" secondAttribute="bottom" constant="18" id="gAJ-vT-iBQ"/>
+                <constraint firstAttribute="trailing" secondItem="5JM-vw-0s6" secondAttribute="trailing" constant="16" id="mf4-Wc-IXu"/>
+                <constraint firstItem="5JM-vw-0s6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="mqg-BL-ByV"/>
+                <constraint firstAttribute="trailing" secondItem="AxB-6i-zLN" secondAttribute="trailing" constant="16" id="okT-F4-8Vg"/>
+                <constraint firstItem="PFV-ZY-K2d" firstAttribute="top" secondItem="AxB-6i-zLN" secondAttribute="bottom" id="tgM-Ml-4HW"/>
+                <constraint firstItem="PFV-ZY-K2d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="vQd-Wh-jdc"/>
+                <constraint firstAttribute="trailing" secondItem="CQ4-FT-tg9" secondAttribute="trailing" constant="16" id="vv6-bz-zAV"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="64.5"/>
+        </view>
+    </objects>
+</document>
